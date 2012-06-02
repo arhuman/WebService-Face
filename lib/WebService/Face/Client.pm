@@ -420,6 +420,7 @@ sub _process_response {
     my $method = shift;
     my $url    = shift;
 
+    my @responses;
     my @tags;
 
     if ( $method eq 'GET' ) {
@@ -441,6 +442,7 @@ sub _process_response {
     }
 
     return @tags;
+    # return @responses;
 }
 
 =head2 response ()
